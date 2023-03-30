@@ -135,7 +135,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.get-testing-suites.outputs.test-case-batch-key) }}
-      max-parallel: 3
+      max-parallel: 12
 
     steps:
       - name: Set up JDK 11
